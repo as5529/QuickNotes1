@@ -1,43 +1,22 @@
-import React, { useState } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import Note from "./Note";
-import CreateArea from "./CreateArea";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import CreateArea from "./Components/CreateArea";
+import NotesPage from "./Components/NotesPage";
 
 function App() {
-  const [notes, setNotes] = useState([]);
-
-  function addNote(newNote) {
-    setNotes((prevNotes) => {
-      return [...prevNotes, newNote];
-    });
-  }
-
-  function deleteNote(id) {
-    setNotes((prevNotes) => {
-      return prevNotes.filter((noteItem, index) => {
-        return index !== id;
-      });
-    });
-  }
-
   return (
-    <div>
-      <Header />
-      <CreateArea onAdd={addNote} />
-      {notes.map((noteItem, index) => {
-        return (
-          <Note
-            key={index}
-            id={index}
-            title={noteItem.title}
-            content={noteItem.content}
-            onDelete={deleteNote}
-          />
-        );
-      })}
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={CreateArea} />
+          <Route path="/notes" component={NotesPage} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
