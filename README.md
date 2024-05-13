@@ -1,9 +1,7 @@
-QuickNotes
+# QuickNotes
 
 ![AA-1](https://github.com/as5529/QuickNotes1/assets/108147368/725cece4-7e80-4922-b3d6-cbaca5b37d1a)
 
-
-# QuickNotes
 
 QuickNotes is a simple note-taking application designed to help you quickly jot down and organize your thoughts, ideas, and reminders. Whether you're brainstorming, making a to-do list, or capturing spontaneous inspiration, QuickNotes provides a convenient way to keep track of everything important.
 
