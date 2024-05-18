@@ -24,12 +24,4 @@ To use QuickNotes, simply follow these steps:
 3. **Start the Application**: `npm start`
 4. **Open Your Browser**: Visit `http://localhost:3000` to start using QuickNotes.
 
-## Contributing
 
-We welcome contributions from the community to make QuickNotes even better! If you'd like to contribute, please follow these guidelines:
-
-- Fork the repository
-- Create a new branch (`git checkout -b feature/awesome-feature`)
-- Commit your changes (`git commit -am 'Add awesome feature'`)
-- Push to the branch (`git push origin feature/awesome-feature`)
-- Create a new Pull Request
